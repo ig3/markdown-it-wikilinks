@@ -1,6 +1,6 @@
 # Markdown-It Wikilinks
 
-[![Build Status](https://travis-ci.org/jsepia/markdown-it-wikilinks.svg?branch=master)](https://travis-ci.org/jsepia/markdown-it-wikilinks) [![Coverage Status](https://coveralls.io/repos/github/jsepia/markdown-it-wikilinks/badge.svg?branch=master)](https://coveralls.io/github/jsepia/markdown-it-wikilinks?branch=master)
+[![Build Status](https://travis-ci.org/ig3/markdown-it-wikilinks.svg?branch=master)](https://travis-ci.org/ig3/markdown-it-wikilinks) [![Coverage Status](https://coveralls.io/repos/github/ig3/markdown-it-wikilinks/badge.svg?branch=master)](https://coveralls.io/github/ig3/markdown-it-wikilinks?branch=master)
 
 Renders [Wikimedia-style links](https://www.mediawiki.org/wiki/Help:Links#Internal_links) in [markdown-it](https://github.com/markdown-it/markdown-it). This is useful for making Markdown-based wikis.
 
@@ -145,5 +145,7 @@ All the default transform does is trim surrounding whitespace.
 * Add examples to `postProcessPageName` and `postProcessLabel`
 
 ## Credits
+
+Based on [markdown-it-wikilinks](https://github.com/jsepia/markdown-it-wikilinks) by Julio Sepia
 
 Based on [markdown-it-ins](https://github.com/markdown-it/markdown-it-ins) by Vitaly Puzrin, Alex Kocharin.
