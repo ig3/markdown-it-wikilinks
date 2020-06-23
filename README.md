@@ -9,13 +9,13 @@ Renders [Wikimedia-style links](https://www.mediawiki.org/wiki/Help:Links#Intern
 Install this into your project:
 
 ```bash
-npm --save install markdown-it-wikilinks
+npm --save install @ig3/markdown-it-wikilinks
 ```
 
 ...and *use* it:
 
 ```js
-const wikilinks = require('markdown-it-wikilinks')(options)
+const wikilinks = require('@ig3/markdown-it-wikilinks')(options)
 const md = require('markdown-it')()
     .use(wikilinks)
     .render('Click [[Wiki Links|here]] to learn about [[/Wiki]] links.')
@@ -39,7 +39,7 @@ The regex to use when matching WikiLinks.
 // Allow exclamation marks to be used.
 
 const html = require('mardon-it')()
-  .use(require('@igs/markdown-it-wikilinks')({ linkPattern: /\[\[([\w\s/!]+)(\|([\w\s/!]+))?\]\]/ }))
+  .use(require('@ig3/markdown-it-wikilinks')({ linkPattern: /\[\[([\w\s/!]+)(\|([\w\s/!]+))?\]\]/ }))
   .render('[[Important!]]');
 ```
 
@@ -51,7 +51,7 @@ The base URL for absolute wiki links.
 
 ```js
 const html = require('markdown-it')()
-  .use(require('markdown-it-wikilinks')({ baseURL: '/wiki/' }))
+  .use(require('@ig3/markdown-it-wikilinks')({ baseURL: '/wiki/' }))
   .render('[[/Main Page]]')
   // <p><a href="/wiki/Main_Page.html">Main Page</a></p>
 ```
@@ -64,7 +64,7 @@ The base URL for relative wiki links.
 
 ```js
 const html = require('markdown-it')()
-  .use(require('markdown-it-wikilinks')({ relativeBaseURL: '#', suffix: '' }))
+  .use(require('@ig3/markdown-it-wikilinks')({ relativeBaseURL: '#', suffix: '' }))
   .render('[[Main Page]]')
   // <p><a href="#Main_Page">Main Page</a></p>
 ```
@@ -83,7 +83,7 @@ Append this suffix to every URL.
 
 ```js
 const html = require('markdown-it')()
-  .use(require('markdown-it-wikilinks')({ uriSuffix: '.php' }))
+  .use(require('@ig3/markdown-it-wikilinks')({ uriSuffix: '.php' }))
   .render('[[Main Page]]')
   // <p><a href="./Main_Page.php">Main Page</a></p>
 ```
@@ -100,7 +100,7 @@ const attrs = {
   'rel': 'nofollow'
 }
 const html = require('markdown-it')()
-  .use(require('markdown-it-wikilinks')({ htmlAttributes: attrs }))
+  .use(require('@ig3/markdown-it-wikilinks')({ htmlAttributes: attrs }))
   .render('[[Main Page]]')
   // <p><a href="./Main_Page.html" class="wikilink" rel="nofollow">Main Page</a></p>
 ```
@@ -130,7 +130,7 @@ function myCustomPageNameGenerator(label) {
 }
 
 const html = require('markdown-it')()
-  .use(require('markdown-it-wikilinks')({ generatePageNameFromLabel: myCustomPageNameGenerator }))
+  .use(require('@ig3/markdown-it-wikilinks')({ generatePageNameFromLabel: myCustomPageNameGenerator }))
   .render('Vive la [[révolution!]] VIVE LA [[RÉVOLUTION!!!]]')
   // <p>Vive la <a href="./Revolution.html">révolution!</a> VIVE LA <a href="./Revolution.html">RÉVOLUTION!!!</a></p>
 ```
