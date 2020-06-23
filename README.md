@@ -160,6 +160,6 @@ All the default transform does is trim surrounding whitespace.
 
 ## Credits
 
-Based on [markdown-it-wikilinks](https://github.com/jsepia/markdown-it-wikilinks) by Julio Sepia
+Based on [markdown-it-wikilinks](https://github.com/jsepia/markdown-it-wikilinks) by Julio Sepia, [@kwvanderlinde/markdown-it-wikilinks](https://github.com/kwvanderlinde/markdown-it-wikilinks) by Kenneth VanderLinde and [markdown-it-wikilinks](https://github.com/osmarks/markdown-it-wikilinks) by Oliver Marks.
 
 Based on [markdown-it-ins](https://github.com/markdown-it/markdown-it-ins) by Vitaly Puzrin, Alex Kocharin.
