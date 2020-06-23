@@ -31,7 +31,7 @@ const md = require('markdown-it')()
 
 ### `linkPattern`
 
-**Default:** `/\[\[([\w\s/]+)(\|([\w\s/]+))?\]\]/`
+**Default:** `/\[\[([-\w\s/]+)(\|([-\w\s/]+))?\]\]/`
 
 The regex to use when matching WikiLinks.
 
