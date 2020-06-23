@@ -7,6 +7,7 @@ const sanitize = require('sanitize-filename')
 module.exports = (options) => {
 
   const defaults = {
+    linkPattern: /\[\[([\w\s/]+)(\|([\w\s/]+))?\]\]/,
     baseURL: '/',
     relativeBaseURL: './',
     makeAllLinksAbsolute: false,
@@ -40,6 +41,7 @@ module.exports = (options) => {
 
   return Plugin(
     /\[\[([\w\s/]+)(\|([\w\s/]+))?\]\]/,
+    options.linkPattern,
     (match, utils) => {
       let label = ''
       let pageName = ''
