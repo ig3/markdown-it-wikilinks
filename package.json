@@ -1,6 +1,6 @@
 {
   "name": "@ig3/markdown-it-wikilinks",
-  "version": "1.0.0",
+  "version": "1.0.1-1",
   "description": "WikiMedia-style links for the markdown-it parser",
   "main": "index.js",
   "scripts": {

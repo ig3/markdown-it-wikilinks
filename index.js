@@ -40,7 +40,6 @@ module.exports = (options) => {
   }
 
   return Plugin(
-    /\[\[([\w\s/]+)(\|([\w\s/]+))?\]\]/,
     options.linkPattern,
     (match, utils) => {
       let label = ''
