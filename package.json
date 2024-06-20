@@ -4,11 +4,8 @@
   "description": "WikiMedia-style links for the markdown-it parser",
   "main": "index.js",
   "scripts": {
-    "coverage": "rimraf coverage && istanbul cover node_modules/.bin/_mocha",
-    "lint-init": "eslint --init",
     "lint": "eslint index.js",
-    "test": "npm run lint && mocha -R spec",
-    "test-ci": "npm run lint && istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rimraf ./coverage"
+    "test": "eslint . && c8 multi-tape test/*.js"
   },
   "repository": {
     "type": "git",
@@ -29,14 +26,12 @@
   },
   "homepage": "https://github.com/ig3/markdown-it-wikilinks#readme",
   "devDependencies": {
-    "coveralls": "^2.11.14",
-    "eslint": "^3.7.1",
-    "istanbul": "^0.4.5",
+    "@ig3/eslint-config-entrain": "^4.0.1",
+    "c8": "^10.1.2",
+    "eslint": "^9.5.0",
     "markdown-it": "^8.0.0",
-    "markdown-it-testgen": "^0.1.4",
-    "mocha": "^3.1.0",
-    "request": "^2.75.0",
-    "rimraf": "^2.5.4"
+    "multi-tape": "^1.7.0",
+    "tape": "^5.8.1"
   },
   "dependencies": {
     "extend": "^3.0.0",
