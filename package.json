@@ -26,16 +26,16 @@
   },
   "homepage": "https://github.com/ig3/markdown-it-wikilinks#readme",
   "devDependencies": {
-    "@ig3/eslint-config-entrain": "^4.0.1",
+    "@ig3/eslint-config-entrain": "^4.0.3",
+    "@ig3/test": "^0.0.8",
     "c8": "^10.1.2",
-    "eslint": "^9.5.0",
-    "markdown-it": "^8.0.0",
-    "multi-tape": "^1.7.0",
-    "tape": "^5.8.1"
+    "eslint": "^9.7.0",
+    "markdown-it": "^14.1.0",
+    "multi-tape": "^1.7.1"
   },
   "dependencies": {
-    "extend": "^3.0.0",
+    "extend": "^3.0.2",
     "markdown-it-regexp": "^0.4.0",
-    "sanitize-filename": "^1.6.1"
+    "sanitize-filename": "^1.6.3"
   }
 }
